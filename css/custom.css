@@ -1,0 +1,24 @@
+.loader-wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+ 	min-height: 200px;
+	min-width: 100%;
+	z-index:99;
+}
+
+.ajax-loader {
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	margin-left: -20px; /* -1 * image width / 2 */
+  	margin-top: -20px; /* -1 * image height / 2 */
+  	background-image: url('../ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width:32px;
+	height:32px;
+}

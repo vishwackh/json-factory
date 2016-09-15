@@ -1,20 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+<html lang="en"  ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Angular with Bootstrap</title>
 
-<div class="container">
-  <h2>Json</h2>
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+input.ng-pristine + ul#strength {
+    display:none;
+}
+ul#strength {
+    display:inline;
+    list-style:none;
+    margin:0;
+    margin-left:15px;
+    padding:0;
+    vertical-align:2px;
+}
+.point:last {
+    margin:0 !important;
+}
+.point {
+    background:#DDD;
+    border-radius:2px;
+    display:inline-block;
+    height:5px;
+    margin-right:1px;
+    width:20px;
+}
+	</style>
+  </head>
+  <body>
+<div class="container-fluid">
+<div class="row">
+    <!-- Second navbar for categories -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Development</a></li>			
+            <li><a href="#">Works</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</div>
 </div>
 
-</body>
-</html>
+<div class="container">
+<div class="row"> 
+ <h2 class="text-center">AngularJS Form Validation</h2>
+<div class="col-lg-offset-4 col-lg-4" ng-controller="mainController">
+ <form name="userForm"  novalidate>
+ 
+ <!-- NAME -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && (userForm.name.$dirty || submitted),'has-success' : userForm.name.$valid && (userForm.name.$dirty || submitted)}">
+ <label>Name</label>
+ <input type="text" name="name" class="form-control" ng-model="user.name" placeholder="Your Name" ng-required="true">
+ <p ng-show="userForm.name.$error.required && (userForm.name.$dirty || submitted)" class="help-block">You name is required.</p>
+ </div>
+ 
+ <!-- USERNAME -->
+ <div class="form-group" ng-class="{ 'has-error has-feedback' : userForm.username.$invalid && (userForm.username.$dirty || submitted),'has-success has-feedback' : userForm.username.$valid && (userForm.username.$dirty || submitted)} ">
+ <label>Username</label>
+ <input type="text" name="username" class="form-control" ng-model="user.username"   placeholder="Your Username" ng-minlength="3" ng-maxlength="8" ng-required="true">
+ <span ng-show="userForm.username.$invalid && (userForm.username.$dirty || submitted)" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  <span ng-show="userForm.username.$valid && (userForm.username.$dirty || submitted)" class="glyphicon glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+ <p ng-show="userForm.username.$error.required && (userForm.username.$dirty || submitted)" class="help-block">You username is required.</p>
+ <p ng-show="userForm.username.$error.minlength && (userForm.username.$dirty || submitted)" class="help-block">Username is too short.</p>
+ <p ng-show="userForm.username.$error.maxlength && (userForm.username.$dirty || submitted)" class="help-block">Username is too long.</p>
+ </div>
+ 
+ <!-- PASSWORD -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && (userForm.password.$dirty || submitted)}">
+ <label>Password</label>
+ <input type="Password" name="password" class="form-control" ng-model="user.password" placeholder="Your Password" ng-required="true">
+ <p ng-show="userForm.password.$error.required && (userForm.password.$dirty || submitted)" class="help-block">Your password is required.</p>
+ </div>
+ 
+ <!-- CONFIRM PASSWORD -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.confirmPassword.$invalid && (userForm.confirmPassword.$dirty || submitted)}">
+ <label>Confirm Password</label>
+ <input type="Password" name="confirmPassword" class="form-control" ng-model="user.confirmPassword" placeholder="Confirm Your Password" ng-compare="password" ng-required="true">
+ <p ng-show="userForm.confirmPassword.$error.required && (userForm.confirmPassword.$dirty || submitted)" class="help-block">Your confirm password is required.</p>
+ <p ng-show="userForm.confirmPassword.$error.compare && (userForm.confirmPassword.$dirty || submitted)" class="help-block">Confirm password doesnot match.</p>
+ </div>
+ 
+ <!-- EMAIL -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && (userForm.email.$dirty || submitted)}">
+ <label>Email</label>
+ <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Your Email Address" ng-required="true">
+ <p ng-show="userForm.email.$error.required && (userForm.email.$dirty || submitted)" class="help-block">Email is required.</p>
+ <p ng-show="userForm.email.$error.email && (userForm.email.$dirty || submitted)" class="help-block">Enter a valid email.</p>
+ </div>
+ 
+ <!-- CONTACTNO -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.contactno.$invalid && (userForm.contactno.$dirty || submitted) }">
+ <label>ContactNo</label>
+ <input type="text" name="contactno" class="form-control" ng-model="user.contactno" placeholder="Your Contact No" zzng-pattern="/^[789]\d{9}$/" maxlength="10">
+ <p ng-show="userForm.contactno.$error.pattern && (userForm.contactno.$dirty || submitted)" class="help-block">Enter a valid contactno.</p>
+ </div>
+ 
+ <!-- COUNTRY -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.country.$invalid && (userForm.country.$dirty || submitted)}">
+ <label>Country</label>
+ <select name="country" class="form-control"
+ ng-model="user.country"
+ ng-options="country.CountryId as country.Name for country in countryList"
+ ng-required="true">
+ <option value=''>Select</option>
+ </select>
+ <p ng-show="userForm.country.$error.required && (userForm.country.$dirty || submitted)" class="help-block">Select country.</p>
+ </div>
+ 
+ <!-- CITY -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.city.$invalid && (userForm.city.$dirty || submitted)}">
+ <label>City</label>
+ <select name="city" class="form-control"
+ ng-model="user.city"
+ ng-options="city.CityId as city.Name for city in cityList"
+ ng-required="true">
+ <option value=''>Select</option>
+ </select>
+ <p ng-show="userForm.city.$error.required && (userForm.city.$dirty || submitted)" class="help-block">Select city.</p>
+ </div>
+ 
+ <!-- TERMS & CONDITIONS -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.terms.$invalid && (userForm.terms.$dirty || submitted)}">
+ <label>Accept Terms & Conditions</label>
+ <input type="checkbox" value="" name="terms" ng-model="user.terms" ng-required="true" />
+ <p ng-show="userForm.terms.$error.required && (userForm.terms.$dirty || submitted)" class="help-block">Accept terms & conditions.</p>
+ </div>
+ 
+ <!-- ng-disabled FOR ENABLING AND DISABLING SUBMIT BUTTON -->
+ <!--<button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Register</button>-->
+ 
+<!--   <div ajax-loader class="loader-wrap" ng-show="loginLoader"></div> -->
 
+ <!-- PASSWORD -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.pw.$invalid && (userForm.pw.$dirty || submitted)}">
+ <label>Password</label>
+ <input type="Password" name="pw" id="pw" class="form-control" ng-model="pw" placeholder="Your Password" ng-required="true">
+   <ul id="strength" check-strength="pw"></ul>
+ <p ng-show="userForm.pw.$error.required && (userForm.pw.$dirty || submitted)" class="help-block">Your password is required.</p>
+           
+ </div>
+ 
+ <!-- CONFIRM PASSWORD -->
+ <div class="form-group" ng-class="{ 'has-error' : userForm.pw2.$invalid && (userForm.pw2.$dirty || submitted)}">
+ <label>Confirm Password</label>
+ <input type="Password" name="pw2" id="pw2" class="form-control" ng-model="pw2" placeholder="Confirm Your Password" pw-check="pw" ng-required="true">
+ <p ng-show="userForm.pw2.$error.required && (userForm.pw2.$dirty || submitted)" class="help-block">Your confirm password is required.</p>
+ <p ng-show="userForm.pw2.$error.pwmatch && (userForm.pw2.$dirty || submitted)" class="help-block">Confirm password doesnot match.</p>
+ </div>
+ 
+ <button type="submit" ng-click="submitForm()" class="btn btn-primary">Register</button>
+ </form>
+
+ </div>
+ 
+</div>
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script> 
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+  </body>
+</html>
