@@ -1,0 +1,39 @@
+{
+    "serviceTiles":[
+    {
+    "imgUrl": "/images/auto-attendant.png",
+    "serviceHeading":"Trunk Call Routing",
+    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+    "serviceLink1":"christmas 2015",
+    "serviceLinkLastEdited":"last edited 1/1/16"
+    },
+    {
+    "imgUrl": "/images/auto-attendant.png",
+    "serviceHeading":"Trunk Group",
+    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+    "serviceLink1":"creative Team",
+    "serviceLinkLastEdited":"last edited 1/1/16"
+    },
+    {
+    "imgUrl": "/images/auto-attendant.png",
+    "serviceHeading":"Group",
+    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+    "serviceLink1":"sales group",
+    "serviceLinkLastEdited":"last edited 1/1/16"
+    },
+    {
+    "imgUrl": "/images/auto-attendant.png",
+    "serviceHeading":"Departments",
+    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+    "serviceLink1":"christmas 2015",
+    "serviceLinkLastEdited":"last edited 1/1/16"
+    },
+    {
+    "imgUrl": "/images/auto-attendant.png",
+    "serviceHeading":"Enterprise",
+    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+    "serviceLink1":"creative Team",
+    "serviceLinkLastEdited":"last edited 1/1/16"
+    }
+    ]
+}
