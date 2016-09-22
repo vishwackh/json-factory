@@ -1,39 +1,42 @@
 {
-    "serviceTiles":[
-    {
-    "imgUrl": "/images/auto-attendant.png",
-    "serviceHeading":"Trunk Call Routing",
-    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
-    "serviceLink1":"christmas 2015",
-    "serviceLinkLastEdited":"last edited 1/1/16"
+    "serviceTiles": [{
+            "name": "huntGroup",
+            "imgUrl": "/images/AssetsIcon/hunt-group.png",
+            "title": "Hunt Group",
+            "serviceDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+            "serviceLink1": "christmas 2015",
+            "serviceLinkLastEdited": "last edited 1/1/16"
     },
-    {
-    "imgUrl": "/images/auto-attendant.png",
-    "serviceHeading":"Trunk Group",
-    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
-    "serviceLink1":"creative Team",
-    "serviceLinkLastEdited":"last edited 1/1/16"
+        {
+            "name": "groupTrunkGroupList",
+            "imgUrl": "/images/AssetsIcon/auto-attendant.png",
+            "title": "Trunk Group",
+            "serviceDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+            "serviceLink1": "creative Team",
+            "serviceLinkLastEdited": "last edited 1/1/16"
+        },
+        {
+            "name": "group",
+            "imgUrl": "/images/AssetsIcon/meet-me-conferencing.png",
+            "title": "Group",
+            "serviceDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+            "serviceLink1": "sales group",
+            "serviceLinkLastEdited": "last edited 1/1/16"
     },
-    {
-    "imgUrl": "/images/auto-attendant.png",
-    "serviceHeading":"Group",
-    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
-    "serviceLink1":"sales group",
-    "serviceLinkLastEdited":"last edited 1/1/16"
+        {
+            "name": "departments",
+            "imgUrl": "/images/AssetsIcon/contact-center.png",
+            "title": "Departments",
+            "serviceDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+            "serviceLink1": "christmas 2015",
+            "serviceLinkLastEdited": "last edited 1/1/16"
     },
-    {
-    "imgUrl": "/images/auto-attendant.png",
-    "serviceHeading":"Departments",
-    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
-    "serviceLink1":"christmas 2015",
-    "serviceLinkLastEdited":"last edited 1/1/16"
-    },
-    {
-    "imgUrl": "/images/auto-attendant.png",
-    "serviceHeading":"Enterprise",
-    "serviceDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
-    "serviceLink1":"creative Team",
-    "serviceLinkLastEdited":"last edited 1/1/16"
-    }
-    ]
+        {
+            "name": "enterprise",
+            "imgUrl": "/images/AssetsIcon/intercom-group.png",
+            "title": "Enterprise",
+            "serviceDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed purus elit. Morbi tortor diam, tempus vel est ac, molestie euismod lacus.",
+            "serviceLink1": "creative Team",
+            "serviceLinkLastEdited": "last edited 1/1/16"
+    }]
 }

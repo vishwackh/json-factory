@@ -1,0 +1,20 @@
+{
+    "enterpriseName": "AT&T Services Inc. (ATTSI)",
+    "enterpriseID": "1003937424",
+    "supportEmail": "sample@sample.com",
+    "contactInfo": [{
+            "name": "Sales Demo",
+            "number": "404-555-1212",
+            "emailAddress": "janedoe@att.com",
+            "wirelessNumber": "404-555-1212",
+            "Role": "sample"
+        },
+        {
+            "name": "Sales Demo",
+            "number": "404-555-1212",
+            "emailAddress": "janedoe@att.com",
+            "wirelessNumber": "404-555-1212",
+            "Role": "sample"
+        }
+    ]
+}

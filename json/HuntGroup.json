@@ -1,0 +1,61 @@
+{
+"users": [{
+    "id":1 ,
+    "serviceUserId": "HG-0100000480@hcomm.att.net",
+    "Name":"Doe",
+    "phoneNo": "7327372781",
+    "Extension":"111",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel": true
+},{
+    "id":2 ,
+    "serviceUserId": "HG-0100000480@hcomm.att.net",
+    "Name":"John",
+    "phoneNo": "7327372783",
+    "Extension":"112",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel": false
+},
+{
+    "id":3 ,
+    "serviceUserId": "HG-0100000@hcomm.att.net",
+    "Name":"Hary",
+    "phoneNo": "7327372784",
+    "Extension":"113",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":true
+},
+{
+    "id":5 ,
+    "serviceUserId": "HG-0100000@hcomm.att.net",
+    "Name":"Hary",
+    "phoneNo": "7327372784",
+    "Extension":"113",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":true
+},
+{
+    "id":6 ,
+    "serviceUserId": "HG-0100000@hcomm.att.net",
+    "Name":"Hary",
+    "phoneNo": "7327372784",
+    "Extension":"113",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":true
+},
+{
+    "id":7 ,
+    "serviceUserId": "HG-0100000@hcomm.att.net",
+    "Name":"Hary",
+    "phoneNo": "7327372784",
+    "Extension":"113",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":true
+}
+]}

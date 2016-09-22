@@ -1,0 +1,28 @@
+{
+"users": [{
+    "serviceUserId": "HG-0100000488-1459178518950@hcomm.att.net",
+    "Name":"Doe",
+    "phoneNo": "7327372781",
+    "Extension":"111",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":"12"
+},{
+     "serviceUserId": "AG-0100000488-1459178518950@hcomm.att.net",
+    "Name":"John",
+    "phoneNo": "7327372783",
+    "Extension":"112",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":"12"
+},
+{
+    "serviceUserId": "ZG-0100000488-1459178518950@hcomm.att.net",
+    "Name":"Hary",
+    "phoneNo": "7327372784",
+    "Extension":"113",
+    "Department":"sample",
+    "ringflow":"Circular",
+    "ActiveSel":"12"
+}
+]}
