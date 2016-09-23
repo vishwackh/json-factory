@@ -1,5 +1,5 @@
 [
-{"Last_Name":"20019181","First_Name":"user","Public_Number":"209911111","Private_Number":"209911232","Action":"","publicNumberRanges":"202-471-2369"},
-{"Last_Name":"20019182","First_Name":"user1","Public_Number":"209911112","Private_Number":"209912323","Action":"","publicNumberRanges":"202-471-5655"},
-{"Last_Name":"20019183","First_Name":"user2","Public_Number":"209911113","Private_Number":"2092323911","Action":"","publicNumberRanges":"202-471-6767"}
+{"Last_Name":"20019181","First_Name":"user","Public_Number":"209911111","Private_Number":"209911232","Action":"","publicNumberRanges":["202-471-2366","202-471-2367","202-471-2368","202-471-2369"]},
+{"Last_Name":"20019182","First_Name":"user1","Public_Number":"209911112","Private_Number":"209912323","Action":"","publicNumberRanges":["202-471-2366","202-471-2367"]},
+{"Last_Name":"20019183","First_Name":"user2","Public_Number":"209911113","Private_Number":"2092323911","Action":"","publicNumberRanges":["202-471-2366"]}
 ]
